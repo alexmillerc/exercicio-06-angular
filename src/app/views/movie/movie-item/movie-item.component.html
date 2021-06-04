@@ -1,0 +1,16 @@
+<mat-card class="card-filme">
+    <mat-card-header>
+        <mat-card-title><a [routerLink]="['/movie', movie.id]">{{movie.title}}</a></mat-card-title>
+        <mat-card-subtitle>{{movie.original_title}}</mat-card-subtitle>
+    </mat-card-header>
+    <a [routerLink]="['/movie', movie.id]">
+    <img mat-card-image src="{{urlImgs}}/{{movie.backdrop_path}}" alt="Photo of a Shiba Inu">
+    </a>
+    <mat-card-content>
+        <p>
+        <b>Original title:</b> {{movie.original_title}}<br/>
+        <b>Votes:</b> {{movie.vote_count}}<br/>
+        <b>Popularidade:</b> {{movie.popularity}}
+        </p>
+    </mat-card-content>
+</mat-card>

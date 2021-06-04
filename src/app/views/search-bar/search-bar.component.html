@@ -1,0 +1,17 @@
+<mat-card-content>
+    <div class="search-bar">
+        <mat-form-field class="example-full-width" style="text-align:center">
+            <mat-label class="pesquisar"><b>Pesquisar Filmes</b></mat-label>
+            <input matInput class="pesquisar" [(ngModel)]="moviesFilter" (ngModelChange)="onMoviesFilter($event)" name="moviesFilter"
+                type="text" placeholder="...">
+        </mat-form-field>
+        <div>
+            <a href="#" (click)="onOrderBy('vote_count')">Ordenar por Votos</a>
+        </div>
+        <div>
+            <a href="#" (click)="onOrderBy('popularity')">Ordenar por Popularidade</a>
+        </div>
+
+    </div>
+
+</mat-card-content>

@@ -1,0 +1,15 @@
+.footer {
+    position:relative;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #f0a500;
+    background-color: #52616f;
+    padding: 20px;
+    margin-top:70px
+}
+
+.footer-container {
+    margin-left: 43px
+}

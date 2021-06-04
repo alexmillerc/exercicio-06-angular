@@ -1,0 +1,38 @@
+.search-bar {
+    text-align: right;
+    margin-right: 60px
+}
+
+.pesquisar{
+    font-size: medium;    
+    color: #52616f;
+}
+
+a {
+    font-size: medium;
+    color: #f0a500;
+}
+
+
+
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+mat-form-field {
+    width: 20%;
+}
+
+@media (max-width: 600px) {
+    .search-bar {
+        text-align: center;
+        margin-right: 0px
+    }
+
+    mat-form-field {
+        width: 70%;
+    }
+
+  }
